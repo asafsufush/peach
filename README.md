@@ -1,3 +1,102 @@
+# Peach — every Claude Code session on one screen
+
+**A free macOS app that shows every Claude Code session you have running, lets you
+answer any of them without hunting for the right terminal window, and searches
+everything you have ever said.**
+
+This is not Claude Desktop, and not another chat client. Every row below is a real
+terminal running real `claude`. Peach reads the session files and the terminal
+screen, shows you what is happening, and types your answer back into that same
+terminal. Drop back to the terminal at any moment — it is the same session, seen
+from a different angle.
+
+No model, no server, no account.
+
+![The rack — every running session on one line](assets/rack.png)
+
+### [⬇ Download the latest release](https://github.com/asafsufush/peach/releases/latest)
+
+macOS 12 or later · Apple silicon · under a megabyte · signed and notarised by
+Apple, so it opens on a double-click.
+
+---
+
+## What it does
+
+**One rack.** Every session on its own line: station number, state, model, context
+size, and the last thing that was said. Three states, at a glance — working,
+waiting for you, idle.
+
+**Questions answered in one click.** When Claude stops to ask you something, the
+question and its options surface here, and clicking answers it in that terminal.
+This is the thing people keep the app open for.
+
+**Reply without switching windows.** "Continue" · "Try again" straight from the row.
+
+![Reading a session, with files and images inline](assets/session.png)
+
+**Search everything ever said** — across every project, including sessions whose
+terminals were closed long ago.
+
+![Full-text search across every conversation on disk](assets/search.png)
+
+**Background agents** — what each one is doing right now.
+
+![Background sub-agent monitor](assets/agents.png)
+
+**Restore** closed sessions back into terminal windows.
+
+**Files and images inline** — a document or a screenshot opens inside the
+conversation instead of sending you to Finder.
+
+---
+
+## Right-to-left text that actually reads correctly
+
+This is the part no other Claude Code client does.
+
+Apple's Terminal implements the Unicode bidirectional algorithm incorrectly. One
+Latin word between two Hebrew or Arabic words — a filename, a flag, a package
+name, which is to say *most of what a coding agent prints* — drags part of the line
+with it, and you read the sentence in an order it was never written in. It is not a
+font problem and not an encoding problem. It is an ordering problem, and it makes
+the terminal genuinely unusable for a whole set of languages.
+
+Peach renders the same bytes in a browser engine, which carries a complete and
+tested implementation of the algorithm.
+
+Hebrew · Arabic · Persian · Urdu · Yiddish · Dhivehi · Sindhi.
+
+---
+
+## What it costs
+
+**Free, and it stays free.** No trial, no tier, no account, nothing held back.
+
+---
+
+## What it is not
+
+- **No server and no account.** It reads local session files. Nothing leaves the machine.
+- **No telemetry.** Nothing is counted and nothing is collected.
+- **The source is not published here.** This repository is the download and the
+  issue tracker. That is a deliberate choice, and it is the honest reason there is
+  no `src/` directory to look at.
+
+## Found a bug?
+
+[Open an issue](https://github.com/asafsufush/peach/issues) — with your macOS
+version and what happened.
+
+Interface in English and Hebrew. · [peach.dev-stuff.org](https://peach.dev-stuff.org)
+
+Built by [Asaf Hameiri](https://www.dev-stuff.org/), who runs a culture centre in
+Tel Aviv and built its entire ticketing and operations stack with Claude Code —
+which is how the terminal's Hebrew problem became impossible to ignore.
+
+---
+---
+
 <div dir="rtl">
 
 # פיץ׳ — כל שיחות קלוד־קוד במסך אחד
@@ -42,7 +141,7 @@
 
 ## כמה זה עולה
 
-**חינם, וזה נשאר ככה.** יש כפתור־תרומה, ושום דבר לא נמנע ממי שלא לוחץ עליו.
+**חינם, וזה נשאר ככה.** בלי תקופת־ניסיון, בלי מדרגות, ובלי חשבון.
 
 ## ⛔ מה שאין
 
@@ -55,50 +154,4 @@
 [פתח דיווח](https://github.com/asafsufush/peach/issues) — עם גרסת־המערכת
 ומה שקרה.
 
----
-
 </div>
-
-## Peach — every Claude Code session on one screen
-
-**This is not Claude Desktop. This is Claude Code itself, wearing a different face.**
-
-Peach does not wrap or reimplement Claude Code, and adds no model, no server
-and no account. Every row is a real terminal running real `claude`. Peach reads
-the session files and the terminal screen, shows you what is happening, and
-injects your answer back into that same terminal. Drop back to the terminal at
-any moment and nothing is lost.
-
-**[Download the latest release →](https://github.com/asafsufush/peach/releases/latest)**
-
-macOS 12 or later · Apple silicon · under a megabyte · signed and notarised by
-Apple, so it opens on a double-click.
-
-- **One rack** — every open terminal on one line: station, state, model, context, last sentence.
-- **Questions answered in one click** — when Claude asks, the options appear here and clicking answers in that terminal.
-- **Search everything** ever said, including sessions whose terminals are closed.
-- **Background agents** — what each one is doing right now.
-- **Restore** closed sessions back into terminal windows.
-
-### Right-to-left text that reads correctly
-
-Apple's Terminal implements the Unicode bidirectional algorithm incorrectly. One
-Latin word between two Hebrew or Arabic words — a filename, a flag, a package
-name — drags part of the line with it, and you read the sentence in an order it
-was not written in. Not a font problem, an ordering problem. Peach renders the
-same bytes in a browser engine, which carries a complete implementation.
-
-Hebrew, Arabic, Persian, Urdu, Yiddish, Dhivehi, Sindhi.
-
-### What it costs
-
-**Free, and it stays free.** There is a donate button and nothing is withheld
-from anyone who skips it.
-
-No server, no account, no telemetry — it reads local session files and nothing
-leaves the machine. Source is not published; this repository is the download and
-the issue tracker.
-
-Interface in English and Hebrew.
-
-[peach.dev-stuff.org](https://peach.dev-stuff.org)
