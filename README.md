@@ -16,8 +16,11 @@ No model, no server, no account.
 
 ### [⬇ Download the latest release](https://github.com/asafsufush/peach/releases/latest)
 
-macOS 12 or later · Apple silicon · under a megabyte · signed and notarised by
-Apple, so it opens on a double-click.
+macOS 12 or later · Apple silicon and Intel · a 2 MB download · signed and
+notarised by Apple, so it opens on a double-click.
+
+**New in 0.33:** long conversations fold — your requests become headers, the
+answers sit beneath them. [All release notes →](https://github.com/asafsufush/peach/releases)
 
 ---
 
@@ -114,8 +117,8 @@ which is how the terminal's Hebrew problem became impossible to ignore.
 
 **[הגרסה האחרונה ←](https://github.com/asafsufush/peach/releases/latest)**
 
-מערכת 12 ומעלה · מעבד אפל · פחות ממגה · חתום ומאושר אצל אפל, ונפתח
-בלחיצה כפולה.
+מערכת 12 ומעלה · אפל סיליקון ואינטל · הורדה של 2 מגה · חתום ומאושר אצל
+אפל, ונפתח בלחיצה כפולה.
 
 ## מה יש בו
 
