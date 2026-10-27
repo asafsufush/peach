@@ -4,6 +4,8 @@
 answer any of them without hunting for the right terminal window, and searches
 everything you have ever said.**
 
+**[Download](https://peach.dev-stuff.org/Peach-0.33.dmg) · [Website and live demo](https://peach.dev-stuff.org)**
+
 This is not Claude Desktop, and not another chat client. Every row below is a real
 terminal running real `claude`. Peach reads the session files and the terminal
 screen, shows you what is happening, and types your answer back into that same
@@ -93,7 +95,7 @@ version and what happened.
 
 Interface in English and Hebrew. · [peach.dev-stuff.org](https://peach.dev-stuff.org)
 
-Built by [Asaf Hameiri](https://www.dev-stuff.org/), who runs a culture centre in
+Built by [Asaf Hameiri](https://github.com/asafsufush), who runs a culture centre in
 Tel Aviv and built its entire ticketing and operations stack with Claude Code —
 which is how the terminal's Hebrew problem became impossible to ignore.
 
